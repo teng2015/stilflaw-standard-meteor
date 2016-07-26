@@ -10,7 +10,7 @@ Template.registerHelper 'niceName', (_id)->
 		else if user.emails[0].address
 			user.emails[0].address
 		else
-			'A user'
+			'匿名用户'
 
 Template.registerHelper 'profileThumbSrc', (_id) ->
 	if typeof Meteor.users != 'undefined'
